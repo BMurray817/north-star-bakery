@@ -5,78 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Send North Star Bakery a question or preorder inquiry.">
     <title>Contact and Preorders | North Star Bakery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
         <h1>Contact and Preorders</h1>
+
         <nav aria-label="Main navigation">
             <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Our Products</a></li>
-        <li><a href="about.html">About Our Bakery</a></li>
-        <li><a href="contact.html" aria-current="page">Contact and Preorders</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="about.html">About Our Bakery</a></li>
+                <li><a href="contact.html" aria-current="page">Contact and Preorders</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+
         <section>
             <h2>Send a Question or Preorder Request</h2>
-            <p>We welcome questions and preorder inquiries. Fields marked * are required. Submitting this demonstration form does not send or confirm an order.</p>
+
+            <p>
+                We welcome questions and preorder inquiries. Fields marked *
+                are required. Submitting this demonstration form does not send
+                or confirm an order.
+            </p>
+
             <form action="#" method="get">
+
                 <fieldset>
                     <legend>Your Contact Information</legend>
+
                     <p>
-                        <label for="customer-name">Full name *</label><br>
-                        <input id="customer-name" name="customer-name" type="text" autocomplete="name" minlength="2" required>
+                        <label for="customer-name">Full name *</label>
+                        <input
+                            id="customer-name"
+                            name="customer-name"
+                            type="text"
+                            autocomplete="name"
+                            minlength="2"
+                            required
+                        >
                     </p>
+
                     <p>
-                        <label for="customer-email">Email address *</label><br>
-                        <input id="customer-email" name="customer-email" type="email" autocomplete="email" required>
+                        <label for="customer-email">Email address *</label>
+                        <input
+                            id="customer-email"
+                            name="customer-email"
+                            type="email"
+                            autocomplete="email"
+                            required
+                        >
                     </p>
                 </fieldset>
+
                 <fieldset>
                     <legend>Request Details</legend>
-                    <p>Request type *</p>
-                    <p>
-                        <input id="preorder" name="request-type" type="radio" value="preorder" required>
+
+                    <p><strong>Request type *</strong></p>
+
+                    <div class="radio-option">
+                        <input
+                            id="preorder"
+                            name="request-type"
+                            type="radio"
+                            value="preorder"
+                            required
+                        >
                         <label for="preorder">Preorder</label>
-                    </p>
-                    <p>
-                        <input id="question" name="request-type" type="radio" value="question">
+                    </div>
+
+                    <div class="radio-option">
+                        <input
+                            id="question"
+                            name="request-type"
+                            type="radio"
+                            value="question"
+                        >
                         <label for="question">General question</label>
-                    </p>
+                    </div>
+
                     <p>
-                        <label for="pickup-date">Preferred pickup date (for preorders)</label><br>
-                        <input id="pickup-date" name="pickup-date" type="date">
+                        <label for="pickup-date">
+                            Preferred pickup date (for preorders)
+                        </label>
+                        <input
+                            id="pickup-date"
+                            name="pickup-date"
+                            type="date"
+                        >
                     </p>
+
                     <p>
-                        <label for="item-details">Item details or question *</label><br>
-                        <textarea id="item-details" name="item-details" rows="5" cols="40" minlength="10" required></textarea>
+                        <label for="item-details">
+                            Item details or question *
+                        </label>
+                        <textarea
+                            id="item-details"
+                            name="item-details"
+                            rows="5"
+                            cols="40"
+                            minlength="10"
+                            required
+                        ></textarea>
                     </p>
+
                     <p>
-                        <label for="allergy-notes">Allergy notes (optional)</label><br>
-                        <textarea id="allergy-notes" name="allergy-notes" rows="3" cols="40"></textarea>
+                        <label for="allergy-notes">
+                            Allergy notes (optional)
+                        </label>
+                        <textarea
+                            id="allergy-notes"
+                            name="allergy-notes"
+                            rows="3"
+                            cols="40"
+                        ></textarea>
                     </p>
                 </fieldset>
+
                 <button type="submit">Submit request</button>
                 <button type="reset">Clear form</button>
+
             </form>
         </section>
+
         <section>
             <h2>Location and Hours</h2>
-            <p>Neighborhood bakery; street address to be confirmed.</p>
+
+            <p>
+                Neighborhood bakery; street address to be confirmed.
+            </p>
+
             <h3>Sample Opening Hours</h3>
+
             <ul>
                 <li>Monday–Friday: 7 a.m.–5 p.m.</li>
                 <li>Saturday: 7 a.m.–5 p.m.</li>
                 <li>Sunday: Closed</li>
             </ul>
-            <p>Please confirm hours and location before visiting.</p>
+
+            <p>
+                Please confirm hours and location before visiting.
+            </p>
         </section>
+
     </main>
+
     <footer>
         <p>&copy; 2026 North Star Bakery.</p>
         <p><a href="contact.html">Contact and preorders</a></p>
     </footer>
+
 </body>
 </html>

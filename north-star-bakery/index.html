@@ -3,66 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover neighborhood breads, pastries, and cakes.">
+    <meta name="description" content="Discover neighborhood breads, pastries, and cakes at North Star Bakery.">
     <title>Welcome to North Star Bakery | North Star Bakery</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
     <header>
         <h1>Welcome to North Star Bakery</h1>
+
         <nav aria-label="Main navigation">
             <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="products.html">Our Products</a></li>
-        <li><a href="about.html">About Our Bakery</a></li>
-        <li><a href="contact.html">Contact and Preorders</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="products.html">Our Products</a></li>
+                <li><a href="about.html">About Our Bakery</a></li>
+                <li><a href="contact.html">Contact and Preorders</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+
         <section>
             <h2>Freshly Baked, Made with Care</h2>
-            <img src="images/bakery-logo_c.png" alt="North Star Bakery logo" width="150">
-            <p>Welcome to North Star Bakery, a neighborhood bakery sharing fresh breads, pastries, and cakes with our community.</p>
+
+            <img
+                src="images/bakery-logo_c.png"
+                alt="North Star Bakery logo"
+                width="150"
+            >
+
+            <p>
+                Welcome to North Star Bakery, a neighborhood bakery sharing
+                fresh breads, pastries, and cakes with our community.
+            </p>
+
             <picture>
-                <source media="(max-width: 600px)" srcset="images/bakery-feature-small_c.png">
-                <img src="images/bakery-feature-large_c.png" alt="Assortment of freshly baked bakery favorites" width="700">
+                <source
+                    media="(max-width: 600px)"
+                    srcset="images/bakery-feature-small_c.png"
+                >
+                <img
+                    src="images/bakery-feature-large_c.png"
+                    alt="Assortment of freshly baked bakery favorites"
+                    width="700"
+                >
             </picture>
         </section>
+
         <section>
             <h2>What We're Known For</h2>
-            <ul>
-                <li>Artisan breads baked with care</li>
-                <li>Pastries for breakfast or an afternoon treat</li>
-                <li>Cakes for birthdays and celebrations</li>
-            </ul>
-            <p><a href="products.html">Browse our products and sample prices</a></p>
+
+            <div class="bakery-highlights">
+
+                <article>
+                    <h3>Artisan Breads</h3>
+                    <p>
+                        Fresh breads baked with care for everyday meals
+                        and special occasions.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Fresh Pastries</h3>
+                    <p>
+                        Pastries made for breakfast, an afternoon treat,
+                        or sharing with friends.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Celebration Cakes</h3>
+                    <p>
+                        Cakes made for birthdays, celebrations, and other
+                        special moments.
+                    </p>
+                </article>
+
+            </div>
+
+            <p>
+                <a href="products.html">
+                    Browse our products and sample prices
+                </a>
+            </p>
         </section>
+
         <section>
             <h2>Featured Item of the Week</h2>
+
             <figure>
-                <img src="images/bakery-signature-loaf_c.png" alt="North Star Bakery's golden-crusted signature loaf" width="450">
-                <figcaption>Signature Loaf: our featured artisan bread of the week.</figcaption>
+                <img
+                    src="images/bakery-signature-loaf_c.png"
+                    alt="North Star Bakery's golden-crusted signature loaf"
+                    width="450"
+                >
+                <figcaption>
+                    Signature Loaf: our featured artisan bread of the week.
+                </figcaption>
             </figure>
-            <p>Bring home a fresh loaf for breakfast, sandwiches, or dinner.</p>
-            <p><a href="contact.html">Request a preorder</a></p>
+
+            <p>
+                Bring home a fresh loaf for breakfast, sandwiches, or dinner.
+            </p>
+
+            <p>
+                <a href="contact.html">Request a preorder</a>
+            </p>
         </section>
+
         <section>
             <h2>Hear Our Welcome Message</h2>
+
             <audio controls preload="none">
-                <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
+                <source
+                    src="media/bakery-welcome_c.mp3"
+                    type="audio/mpeg"
+                >
                 Your browser does not support audio playback.
             </audio>
-            <p>Audio alternative: A welcome message from North Star Bakery. Contact us if you need a full transcript of the recording.</p>
+
+            <p>
+                Audio alternative: A welcome message from North Star Bakery.
+                Contact us if you need a full transcript of the recording.
+            </p>
         </section>
+
         <section>
             <h2>Hours and Location</h2>
-            <p>Neighborhood bakery; street address to be confirmed.</p>
-            <p>Sample hours: Monday–Saturday, 7 a.m.–5 p.m.; Sunday closed. Please confirm before visiting.</p>
+
+            <p>
+                Neighborhood bakery; street address to be confirmed.
+            </p>
+
+            <p>
+                Sample hours: Monday–Saturday, 7 a.m.–5 p.m.; Sunday closed.
+                Please confirm before visiting.
+            </p>
         </section>
+
     </main>
+
     <footer>
         <p>&copy; 2026 North Star Bakery.</p>
         <p><a href="contact.html">Contact and preorders</a></p>
     </footer>
+
 </body>
 </html>
