@@ -34,7 +34,7 @@
                 or confirm an order.
             </p>
 
-            <form action="#" method="get">
+            <form id="contact-form" action="#" method="get" novalidate>
 
                 <fieldset>
                     <legend>Your Contact Information</legend>
@@ -49,6 +49,11 @@
                             minlength="2"
                             required
                         >
+                        <span
+                            id="customer-name-error"
+                            class="form-error"
+                            aria-live="polite"
+                        ></span>
                     </p>
 
                     <p>
@@ -60,6 +65,11 @@
                             autocomplete="email"
                             required
                         >
+                        <span
+                            id="customer-email-error"
+                            class="form-error"
+                            aria-live="polite"
+                        ></span>
                     </p>
                 </fieldset>
 
@@ -112,6 +122,11 @@
                             minlength="10"
                             required
                         ></textarea>
+                        <span
+                            id="item-details-error"
+                            class="form-error"
+                            aria-live="polite"
+                        ></span>
                     </p>
 
                     <p>
@@ -159,6 +174,8 @@
         <p>&copy; 2026 North Star Bakery.</p>
         <p><a href="contact.html">Contact and preorders</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>

@@ -43,6 +43,11 @@
         <section>
             <h2>Our Bakery Menu</h2>
 
+            <p>
+                See something you like? Add it to your favorites.
+                Your choices will be remembered when you return.
+            </p>
+
             <div class="product-list">
 
                 <article>
@@ -52,14 +57,34 @@
                         <li>
                             <strong>Signature Loaf:</strong>
                             Golden-crusted artisan bread.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="signature-loaf"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Whole Wheat:</strong>
                             A hearty everyday loaf.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="whole-wheat"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Sourdough:</strong>
                             A loaf with a tangy flavor.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="sourdough"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
                     </ul>
 
@@ -76,14 +101,34 @@
                         <li>
                             <strong>Croissant:</strong>
                             Flaky and buttery.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="croissant"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Cinnamon Roll:</strong>
                             Soft pastry with cinnamon filling.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="cinnamon-roll"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Fruit Danish:</strong>
                             Pastry with fruit topping.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="fruit-danish"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
                     </ul>
 
@@ -100,14 +145,34 @@
                         <li>
                             <strong>Vanilla Cake:</strong>
                             A classic celebration cake.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="vanilla-cake"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Chocolate Cake:</strong>
                             A rich chocolate dessert.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="chocolate-cake"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
+
                         <li>
                             <strong>Custom Cake:</strong>
                             Ask about flavors and decoration options.
+                            <button type="button"
+                                    class="favorite-button"
+                                    data-product-id="custom-cake"
+                                    aria-pressed="false">
+                                Add to Favorites
+                            </button>
                         </li>
                     </ul>
 
@@ -125,12 +190,29 @@
             </p>
         </section>
 
+        <section class="favorites-section">
+            <h2>Your Favorites</h2>
+
+            <p>
+                Your saved favorites will stay here even if you refresh
+                the page or come back later.
+            </p>
+
+            <p id="favorites-empty">
+                You have not added any favorites yet.
+            </p>
+
+            <ul id="favorites-list" aria-live="polite"></ul>
+        </section>
+
     </main>
 
     <footer>
         <p>&copy; 2026 North Star Bakery.</p>
         <p><a href="contact.html">Contact and preorders</a></p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
